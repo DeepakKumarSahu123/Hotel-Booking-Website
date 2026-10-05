@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Universal  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+:root {
+
+    --btn-color: #BAFF39;
+    --bg-color: #495E57;
+    --text-color: #FFFFFF;
+    --border-radius-size: 10px;
+    --transition-time: 0.5s;
+}
+
+*::selection {
+    color: black;
+    background-color: var(--btn-color);
+}
+
+body {
+    background-color: rgb(240, 235, 235);
+    margin: 3rem 5%;
+}
+
+a {
+
+    display: block;
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+a:hover {
+    color: black;
+    background-color: var(--btn-color);
+    transition: all var(--transition-time);
+}
+
+p::first-letter {
+    color: var(--btn-color);
+    font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* Header section */
+header img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+
+}
+
+/* Navigation Section */
+nav {
+    background-color: var(--bg-color);
+    margin: 1rem 0;
+    border-radius: var(--border-radius-size);
+    position:sticky;
+    top:0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 3rem;
+    flex-wrap: wrap;
+
+    padding: 0.5rem;
+
+
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+/* Promotion Section */
+
+
+.promotion-section {
+    min-height: 300px;
+    border-radius: var(--border-radius-size);
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--text-color);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("./Images/promotion-image.jpg");
+
+    background-size: cover;
+    background-position: 0 100%;
+
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.promotion-section article h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.promotion-section article p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+
+.promotion-section article h1 span {
+    font-size: 2.5rem;
+    animation: change-color 1s linear infinite alternate;
+}
+
+
+
+/* Timing section */
+
+.content-section article .timing {
+    min-height: 300px;
+
+    border-radius: var(--border-radius-size);
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--text-color);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url(./Images/left-timing.jpg);
+
+    background-size: cover;
+    background-position: 60% 40%;
+
+    background-repeat: no-repeat;
+
+}
+
+.content-section article .timing h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-section article .timing ul {
+    list-style: none;
+    text-align: end;
+}
+
+.content-section article .timing ul li::first-letter {
+    color: var(--btn-color)
+}
+
+/* Menu Section */
+.content-section .menu-section {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-size);
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--text-color);
+
+}
+
+.content-section .menu-section h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-section article .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.content-section article .menu .food-type {
+    padding: 1rem;
+}
+
+.content-section article .menu .food-type h2 {
+    text-align: center;
+
+}
+
+.content-section article .menu .food-type figure {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-section article .menu .food-type figure img {
+    border-radius: 20px;
+    width: 50%;
+    height: 10rem;
+    object-fit: cover;
+
+}
+
+.content-section article .menu .food-type figure img:hover {
+    box-shadow: 5px 5px 20px rgb(155, 154, 154);
+    transition: var(--transition-time);
+}
+
+.content-section article .menu .food-type figure .desc {
+    padding: 1rem;
+}
+
+.content-section article .booking-table-section {
+    min-height:500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./Images/book-table-image.jpg);
+    border-radius: var(--border-radius-size);
+    background-size: cover;
+    background-position: 60% 40%;
+    background-repeat: no-repeat;
+
+    margin: 1rem 0;
+    padding: 1rem;
+
+    color: var(--text-color);
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.content-section article .booking-table-section p , h1{
+    text-align: center;
+}
+
+.content-section article .booking-table-section h1 {
+    font-size:2rem;
+}
+.content-section article .booking-table-section button a{
+    font-size:1.5rem;
+}
+.content-section article .booking-table-section button {
+   border-radius: var(--border-radius-size);
+   border:0.1rem solid white;
+   background-color: var(--bg-color);
+
+}
+/* footer section */
+
+footer{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 1fr 1fr;
+padding:1rem;
+background-color: var(--bg-color);
+border-radius: var(--border-radius-size);
+
+
+}
+footer img{
+    max-height:100px;
+    grid-column:1/2;
+    grid-row:1/3;
+}
+footer #little-lemon{
+    grid-column:2/5;
+    grid-row:1/2;
+    place-self:center;
+    color:var(--text-color);
+    font-weight:bold;
+}
+footer #author{
+    grid-column:2/5;
+    grid-row:2/3;
+    place-self:center;
+   
+}
+footer #author a{
+    font-weight:bold;
+    animation: change-color 1s linear infinite alternate;
+}
+
+@keyframes change-color {
+    from {
+        color: var(--text-color);
+    }
+
+    to {
+        color: var(--bg-color);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /* menu section */
+    .content-section article .menu {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .content-section article .menu .food-type figure img {
+        width: 50%;
+    }
+}

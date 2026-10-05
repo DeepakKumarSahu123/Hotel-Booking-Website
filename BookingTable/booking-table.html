@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Khetrabasi Reddy">
+    <meta name="language" content="english">
+    <meta name="title" content="Restaurant: Little Lemon" />
+
+    <meta property="og:title" content="Restaurant: Little Lemon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="Images\Asset 20@4x.png" />
+
+    <link rel="stylesheet" href="tableStyle.css">
+
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+    <title>Restaurant: Little Lemon</title>
+    <title>Booking Table</title>
+</head>
+<body>
+
+    <header>
+        <img src="../Images/Asset 16@4x.png" alt="little-lemon-logo" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+          
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+          
+            <label>Table Type:</label><br>
+            <input type="radio" id="indoor" name="table-type" value="indoor" required>
+            <label for="indoor">Indoor</label><br>
+            <input type="radio" id="outdoor" name="table-type" value="outdoor" required>
+            <label for="outdoor">Outdoor</label><br><br>
+          
+            <label for="party-size">Party Size:</label>
+            <select id="party-size" name="party-size" required>
+              <option value="2">2 people</option>
+              <option value="4">4 people</option>
+              <option value="6">6 people</option>
+            </select><br><br>
+          
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" list="locations" required>
+            <datalist id="locations">
+              <option value="City 1">
+              <option value="City 2">
+              <option value="City 3">
+              <option value="City 4">
+              <option value="City 5">
+            </datalist><br><br>
+          
+            <input type="submit" value="Book Now">
+          </form>
+          
+    </main>
+
+
+    <footer id="about-us">
+        <img src="../Images/footer-image-.png" alt="logo_footer">
+        <div id="little-lemon">Copyright&copy; Little Lemon</div>
+        <div id="author"><a href="https://www.coursera.org/user/04e16c189e5b70aa7bd11c4ec3d747f0" target="_blank">By Khetrabasi</a></div>
+    </footer>
+</body>
+</html>
